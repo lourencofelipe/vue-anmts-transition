@@ -67,7 +67,17 @@ export default {
 </script>
 
 <style scoped>
-
+  .list-enter, .list-leave-to {
+    opacity: 0;
+    transform: translateX(-70px);
+  }
+  .list-enter-active, .list-leave-active, .list-move {
+    transition: all 1s;
+  }
+  .list-leave-active {
+    position: absolute;
+    width: calc(100% - 100px);
+  }
 </style>
 
  
